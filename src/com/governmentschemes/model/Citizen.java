@@ -2,8 +2,12 @@ package com.governmentschemes.model;
 
 import java.util.Date;
 
+
+
 public class Citizen {
 	private int citizenId;
+	private String userName;
+	private String password;
 	private String fullName;
 	private Date DateOfBirth;
 	private String gender;
@@ -13,6 +17,7 @@ public class Citizen {
 	private String incomeGroup;
 	private String profession;
 	private String aadharNumber;
+	
 	public Citizen(int citizenId, String fullName, Date dateOfBirth, String gender, String email, int phoneNumber,
 			String address, String incomeGroup, String profession, String aadharNumber, String panNumber) {
 		super();
@@ -30,6 +35,23 @@ public class Citizen {
 	}
 
 	private String panNumber;
+	
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 
 	public int getCitizenId() {
 		return citizenId;
